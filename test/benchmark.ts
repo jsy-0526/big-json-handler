@@ -356,7 +356,7 @@ class BjBenchmark {
     const root = bjRead(reader);
     let count = 0;
     
-    // 这里需要手动解析复杂结构，因为sj.js不支持随机访问
+    // 这里需要手动解析复杂结构，因为big-json-handler不支持随机访问
     // 我们只遍历顶层对象作为示例
     const iterator = new BjObjectIterator(reader, root);
     for (const {key, value} of iterator) {

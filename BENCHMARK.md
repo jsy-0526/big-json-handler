@@ -128,7 +128,7 @@ const testCases = [
 ```typescript
 // ✅ Good - Early exit when found
 for (const {key, value} of iterator) {
-  if (sjGetString(reader, key) === 'target') {
+  if (bjGetString(reader, key) === 'target') {
     processValue(value);
     break; // Stop parsing unnecessary data
   }
