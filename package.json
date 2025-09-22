@@ -1,0 +1,38 @@
+{
+  "name": "big-json-handler",
+  "version": "1.0.0",
+  "description": "Memory-efficient JSON parser for large datasets - High-performance streaming parser",
+  "main": "dist/src/bjh.js",
+  "types": "dist/src/bjh.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ui": "vitest --ui",
+    "benchmark": "npm run build && node --expose-gc dist/test/benchmark.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "json",
+    "parser",
+    "big-data",
+    "memory-efficient", 
+    "streaming",
+    "large-files",
+    "typescript",
+    "performance"
+  ],
+  "author": "jsy-0526",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@vitest/ui": "^2.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
+  "packageManager": "pnpm@10.16.1"
+}
